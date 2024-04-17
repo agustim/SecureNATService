@@ -1,3 +1,7 @@
 cloudflared
 tor-config/torrc.sample
 hidden_service
+services_onion_names
+.env
+cloudflared2
+test
