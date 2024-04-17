@@ -1,29 +1,7 @@
 # Secure NAT Service
 
 Build a service over TOR & cloudflare tunnel, to server any http service.
-
-## Prerequisite 
-
-### Cloudflare:
-
-Create tunnel:
-
-cloudflared tunnel login
-
-per aconseguir el cert.pem
-```
-
-cloudflared tunnel create <NAME>
-cloudflared tunnel list
-```
-
-
-### Tor
-
-## Next steps
-
 Simple system, we can use some docker like [this](https://github.com/chrisjcox79/docker-tor-hidden-service)
-
 
 ## Configurar
 
@@ -81,8 +59,9 @@ EOF
 ```
 
 Generar config.yml
-
+```
 echo "tunnel: ${TUNNEL_NAME}" > ./cloudflared/config.yml
+```
 
 
 ## Generar vanity address
